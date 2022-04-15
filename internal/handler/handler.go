@@ -5,6 +5,9 @@ import (
 	"net/http"
 )
 
-func Ping(c *gin.Context) {
-	c.String(http.StatusOK, "pong")
+func Index(c *gin.Context) {
+	var params gin.H
+	params["title"] = "Admin Page Working on"
+	c.HTML(http.StatusOK, "index.tmpl", params)
 }
+
