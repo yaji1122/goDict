@@ -1,0 +1,1 @@
+This is a pure RESTful API for translate english vocabularies into chinese. 
