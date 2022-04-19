@@ -21,7 +21,7 @@ services:
 #      - ./db/scripts:/docker-entrypoint-initdb.d/
 #    networks:
 #      - boilerplatenetwork
-  goDict_api:
+  godict_api:
     build:
       context: .
       dockerfile: Dockerfile.dev
