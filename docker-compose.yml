@@ -1,12 +1,12 @@
 version: "3.7"
 
 volumes:
-  goDictvolume:
-    name: goDict-volume
+  godictvolume:
+    name: godict-volume
 
 networks:
-  goDictnetwork:
-    name: goDict-network
+  godictnetwork:
+    name: godict-network
 
 services:
 #  pg:
@@ -32,7 +32,7 @@ services:
     ports:
       - 8080:8080
     networks:
-      - goDictnetwork
+      - godictnetwork
 #    env_file:
 #      - .env
     entrypoint: ["/bin/bash", "./scripts/entrypoint.dev.sh"]
