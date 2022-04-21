@@ -35,4 +35,4 @@ services:
       - godictnetwork
 #    env_file:
 #      - .env
-    entrypoint: ["/bin/bash", "./scripts/entrypoint.dev.sh"]
+    entrypoint: ["/bin/bash", "./run.sh"]
