@@ -15,6 +15,6 @@ COPY . .
 RUN go build -o godict ./cmd/*.go
 
 # This container exposes port to the outside world
-EXPOSE 8080
+EXPOSE 8081
 
 CMD ["./godict"]
