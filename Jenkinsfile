@@ -7,12 +7,10 @@ pipeline {
 // Building your Test Images
     stage('BUILD') {
 
-      stage('Build App') {
-                steps {
-                  sh 'docker build -f Dockerfile \
-                  -t go-dictionary:trunk .'
-                }
-              }
+      steps {
+            sh 'docker build -f Dockerfile \
+            -t go-dictionary:trunk .'
+          }
 
       post {
         failure {
